@@ -1,0 +1,326 @@
+body{
+    background-color: lightblue;
+    padding: 0px;
+    margin: 0px;
+    font-size: 20PX;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: zoom-in;
+}
+
+.container-form{
+    width: 50%;
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    cursor: zoom-in;
+    padding: 10px;
+    margin-top: 40px;
+    /* height: 66vh; */
+}
+
+input[type=text]{
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    text-indent: 20px;
+    
+}
+
+input[type=text]:focus{
+    outline: none;
+    border: 1px solid lightblue;
+  
+}
+
+::placeholder{
+    font-size: 15px;
+    color: lightblue;
+    font-weight: bold;
+    /* padding: 0px 15px; */
+}
+
+.user{
+    position: absolute;
+    top: 18%; 
+    left: 24%;
+    font-size: 25px;
+
+}
+
+.form-user{
+    position: relative;
+}
+
+/* here is my email design */
+input[type=email]{
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    text-indent: 20px;
+    margin-top: 20px;
+    
+}
+
+.email{
+    position: absolute;
+    top: 38%; 
+    left: 24%;
+    font-size: 25px;
+
+}
+
+.form-email{
+    position: relative;
+}
+
+input[type=email]:focus{
+    outline: none;
+    border: 1px solid lightblue;
+  
+}
+input[type=tel]{
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    
+}
+
+input[type=tel]:focus{
+    outline: none;
+    border: 1px solid lightblue;
+  
+}
+
+input[type=password]{
+    width: 50%;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin-top: 20px;
+    
+}
+
+input[type=password]:focus{
+    outline: none;
+    border: 1px solid lightblue;
+  
+}
+
+input[type=submit]{
+    padding: 10px 170px;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin-top: 25px;
+    font-weight: bold;
+    background-color: rgb(1, 255, 230);
+    font-size: 15px;
+    margin-bottom: 35px;
+}
+
+input[type=submit]:focus{
+    outline: none;
+    border: 1px solid red;
+    background-color: lightgray;
+    color: darkred;
+  
+}
+
+/* here is my divider style */
+
+.divider{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+.divider::after{
+    content: '';
+    padding: 1px;
+    background-color: lightblue;
+    flex: 1;
+    margin:10px 3px;
+    
+}
+
+.divider::before{
+    content: '';
+    padding: 1px;
+    background-color: lightblue;
+    flex: 1;
+    margin: 10px 3px;
+    
+}
+
+.divider span{
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 55px;
+    border: 1px solid lightblue;
+}
+
+/* here is my social media style */
+
+.btn-facebook{
+    background-color: #3b5998;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.btn-twitter{
+    background-color: #00acee;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.btn-google{
+    background-color: #0F9D58;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+/* here is my mobile responsiveness */
+
+@media (min-width: 400px) and (max-width: 909px){
+    .container-form{
+       width: 90%;
+       margin-top: 50px;
+    }
+    
+    input[type=text]{
+        width: 90%;
+        text-indent: 24px;
+
+        
+    }
+    input[type=text]:focus{
+        outline: none;
+        border: 1px solid lightblue;
+        background-color: lemonchiffon;
+    }
+    
+    ::placeholder{
+        font-size: 15px;
+    }
+    
+    .user{
+        position: absolute;
+        top: 18%; 
+        left: 4%;
+        font-size: 25px;
+    }
+    
+    .form-user{
+        position: relative;
+    }
+    
+    /* here is my email design */
+    input[type=email]{
+        width: 90%; 
+        text-indent: 25px;
+    }
+    
+    .email{
+        position: absolute;
+        top: 38%; 
+        left: 4%;
+        font-size: 25px;
+    }
+    
+    .form-email{
+        position: relative;
+    }
+    
+    input[type=email]:focus{
+        outline: none;
+        border: 1px solid lightblue;
+        background-color: lemonchiffon;
+    }
+
+    input[type=tel]{
+        width: 90%;   
+    }
+    
+    input[type=tel]:focus{
+        outline: none;
+        border: 1px solid lightblue;
+        background-color: lemonchiffon;
+    }
+    
+    input[type=password]{
+        width: 90%;
+       
+    }
+    input[type=password]:focus{
+        outline: none;
+        border: 1px solid lightblue;
+        background-color: lemonchiffon;
+    }
+    
+    input[type=submit]{
+        width: 60%;
+        padding: 10px 10px; 
+    }
+    
+    input[type=submit]:focus{
+      background-color:lemonchiffon;
+      color:red;
+    }
+
+    .p{
+        font-size: 17px;
+    }
+
+    .social-media{
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
